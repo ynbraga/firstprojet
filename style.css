@@ -1,0 +1,118 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background: linear-gradient(90deg, rgb(215, 167, 112), rgb(215, 97, 28));
+    text-align: center;
+    padding: 35px;
+    align-items: center;
+}
+
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: rgb(179, 122, 22);
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+.container-corpo {
+    background: white;
+    margin: auto;
+    border-radius: 30px;
+    width: 600px;
+    box-shadow: 4px 4px 12px black;
+}
+
+.container-input {
+    width: auto;
+    padding: 5px;
+    border-bottom: 3px solid #ccc; 
+    border: none;
+    outline: none;
+}
+
+.container-input input {
+    width: 480px;
+}
+
+.container-input label {
+    display: flex;
+    height: 5px;
+    margin-left: 47px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font:800
+}
+
+.container-termos [type=checkbox] {
+    transform: scale(1.6);
+    display: flex;
+    margin-left: 50px;
+}
+
+.container-termos {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-termos label {
+    display: flex;
+    padding-left: 15px;
+}
+
+
+label {
+    width: 500px;
+    padding: 5px;
+    color: rgb(83, 83, 83)
+}
+
+input {
+    padding: 5px;
+    border: none;
+    border-bottom: 3px solid rgb(141, 143, 141); 
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+
+}
+
+
+.button input {
+    border: 3px solid rgb(197, 136, 107);
+    border-radius: 20px;
+    align-items: center;
+    padding: 15px;
+    width: 150px;
+    background:linear-gradient(to bottom, rgb(190, 116, 82) 5%, rgb(187, 70, 16)100%); 
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: Helvetica,sans-serif;
+}
+
+.button {
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+
+
+
+
+    
+

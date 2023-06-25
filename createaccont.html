@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylespan.css">
+</head>
+
+<body>
+
+    <!------------------------------- cabeçalho ------------------------------------------->
+
+    <!------------------------------- inputs ------------------------------------------->
+
+    <section class="container-corpo">
+        <form action="https://formsubmit.co/yure.braga@outlook.com" method="post">
+            <div>
+                <h1>Crie sua conta</h1>
+                <p>Já possui sua conta? <a href="login.html">Clique Aqui</a></p>
+            </div>
+
+            <div class="container-input">
+                <label for="projInput">E-mail</label><br>
+                <input id="projInput" autocomplete="off"><br>
+                <span class="erro" id="erroNome">Este campo é obrigatório.</span>
+                <span id="erroProj" class="erro2" style="display: none;">Insira um e-mail no formato:
+                    "eu@email.com"</span>
+            </div>
+
+            <div class="container-input">
+                <label for="projInput2">Confirmação de e-mail</label><br>
+                <input id="projInput2" autocomplete="off" oninput="temEmail(this)"><br>
+                <span class="erro" id="erroNome2">Este campo é obrigatório.</span>
+                <span id="erroProj2" class="erro2" style="display: none;">Insira um e-mail no formato:
+                    "eu@email.com"</span>
+            </div>
+
+            <div class="container-input">
+                <label for="projInput3">Senha</label><br>
+                <input id="projInput3" type="password" autocomplete="off" maxlength="22" oninput="temSenha(this)"><br>
+                <span class="erro" id="erroNome3">Este campo é obrigatório.</span>
+                <span id="erroProj3" class="erro3" style="display: none;">A senha deve conter entre 4 a 22 caracteres incluindo minúsculo e<br>maiúsculo, números e especiais [@#$].</span>
+            </div>
+
+            <div class="container-input">
+                <label for="projInput4">Nome Completo</label><br>
+                <input id="projInput4" name="nome" required oninput="temLoguin(this)"><br>
+                <span class="erro" id="erroNome4">Este campo é obrigatório.</span>
+                <span id="erroProj4" class="erro4" style="display: none;">Por favor, digite seu nome completo.</span>
+            </div>
+
+            <div class="container-input">
+                <label for="projInput5"> Data de Nascimento</label><br>
+                <input id="projInput5" name="data" placeholder="dd/mm/aaaa" maxlength="10" data-mask="00/00/0000"
+                oninput="temData(this)">
+                <span class="erro" id="erroNome5">Este campo é obrigatório.</span>
+                <span class="erro5" id="erroProj5" style="display: none;"><br>Digite a data de nascimento no formato 01/12/1990</span>
+
+            </div>
+
+            <div class="container-termos">
+                <input type="checkbox" name="termos" id="checkbox">
+                <label for="checkbox">Desejo receber informações promocionais por email.</label>
+            </div>
+
+            <div class="container-termos">
+                <input type="checkbox" name="termos" id="checkbox">
+                <label for="checkbox">Eu li e concordo com a &nbsp;<a href="" target="_blank"> Política de Privacidade
+                    </a>&nbsp; da pagina.</label>
+
+            </div>
+
+            <div class="button">
+                <label for=""></label>
+                <input type="submit" value="Criar Conta">
+            </div>
+        </form>
+    </section>
+
+    <script src="scriptspan.js"></script>
+    <script src="scriptlight.js"></script>
+    <script src="scriptspan2.js"></script>
+</body>
+
+</html>
