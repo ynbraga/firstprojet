@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/login.css">
+    <link rel="stylesheet" href="src/stylespan.css">
 </head>
 
 <body>
@@ -13,17 +14,21 @@
 
     <section>
         <h1>Acesse sua conta</h1>
-        <p>Já tem conta? <a href="src/createaccont.html">Clique aqui</a></p>
+        <p>Ainda não possui conta? <a href="src/createaccont.html">Clique aqui</a></p>
 
         <div class="inputLogin">
-            <label for="login">Digite seu e-mail</label>
-            <input type="text" autocomplete="off" id="login">
-            <span></span>
+            <label for="loginColor" required>Digite seu e-mail</label>
+            <input type="text" autocomplete="off" id="loginColor">
+            <span class="erroS" id="erroSpan">Este campo é obrigatório.</span>
+            <span id="erroLoginProj" class="erroInput" style="display: none;"><br>Insira um e-mail no formato:
+                "eu@email.com"</span>
         </div>
 
         <div class="inputLogin">
-            <label for="password">Digite sua senha</label>
-            <input type="password" autocomplete="off" id="password">
+            <label for="inputPassword">Digite sua senha</label>
+            <input type="password" autocomplete="off" id="inputPassword" required maxlength="22" oninput="temSenha(this)">
+            <span class="erroS2" id="erroSpan2">Este campo é obrigatório.</span>
+            <span id="erroInput2" class="erroInput2" style="display: none;"><br>A senha deve conter entre 4 a 22 caracteres incluindo minúsculo e maiúsculo, números e especiais [@#$].</span>
             <span></span>
         </div>
 
@@ -39,6 +44,8 @@
     </section>
 
     <footer></footer>
+
+    <script src="src/scriptcolor.js"></script>
 </body>
 
 </html>

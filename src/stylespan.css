@@ -26,5 +26,27 @@
     padding-right: 125px;
     
 }
+
+.erroS {
+    display: none;
+    color: rgb(255, 115, 77);
+    padding-right: 310px;
+}
+
+.erroS2 {
+    display: none;
+    color: rgb(255, 115, 77);
+    padding-right: 310px;
+}
+
+.erroInput {
+    color: rgb(255, 115, 77);
+    padding-right: 168px;
+}
+
+.erroInput2 {
+    color: rgb(255, 115, 77);
+    padding-right: 200px;
+}
     
 

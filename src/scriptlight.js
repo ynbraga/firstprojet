@@ -128,3 +128,5 @@ function formatAsDate(value) {
 
   return formattedValue;
 }
+
+//------------------------------------------------------------------------
